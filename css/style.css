@@ -319,10 +319,10 @@ h2 {
 	/* height: 32%; */
 }
 .threeButtons {
-	place-items: center;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1.5vh 2vh;
+	display: flex;
+	flex-direction: column;
+	/* grid-template-columns: 1fr 1fr; */
+	/* gap: 1.5vh 2vh; */
 
 	gap: 1.5vh;
 }
