@@ -1171,6 +1171,7 @@ function createContent(obj, parent) {
 					elementContainer.classList.add('elementContainer', 'imageContainer')
 					for (let i = 0; i < e; i++) {
 						let image = document.createElement('img')
+						image.classList.add('tableImg')
 						if (
 							currentButton === 'tourlock18' ||
 							currentButton === 'tourlock182' ||
@@ -1230,6 +1231,7 @@ function createContent(obj, parent) {
 						elementContainer.classList.add('elementContainer', 'imageContainer')
 						for (let i = 0; i < e; i++) {
 							let image = document.createElement('img')
+							image.classList.add('extraImg')
 							if (
 								currentButton === 'tourlock18' ||
 								currentButton === 'tourlock182' ||
