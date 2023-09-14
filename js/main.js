@@ -1369,6 +1369,7 @@ window.onload = function () {
 	if (window.jQuery) {
 		// jQuery is loaded
 		alert('Yeah!')
+		console.log(window.CI360)
 	} else {
 		// jQuery is not loaded
 		alert("Doesn't Work")
