@@ -581,7 +581,11 @@ a {
 .elementContainerSecond {
 	display: none;
 }
+.imageContainer360 {
+	width: 80%;
 
+	aspect-ratio: 2/1;
+}
 p {
 	white-space: pre-line;
 	display: flex;
@@ -698,6 +702,9 @@ li:last-child {
 
 .rotation {
 	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	left: 0;
 	top: 0;
 	width: 100%;

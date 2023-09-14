@@ -1365,16 +1365,7 @@ function setFontSizes() {
 		// } - 320px) / (1440 - 320)))`
 	}
 }
-window.onload = function () {
-	if (window.jQuery) {
-		// jQuery is loaded
-		alert('Yeah!')
-		console.log(window.CI360)
-	} else {
-		// jQuery is not loaded
-		alert("Doesn't Work")
-	}
-}
+
 function createRotation() {
 	console.log(pageIndex)
 	if (rotation) {
@@ -1413,7 +1404,7 @@ function createRotation() {
 		imageContainer360.setAttribute('data-filename', 'lifelineSw{index}.png')
 		imageContainer360.setAttribute('data-amount-x', '120')
 		imageContainer360.setAttribute('data-autoplay', '')
-		imageContainer360.setAttribute('data-drag-speed', '250')
+		imageContainer360.setAttribute('data-drag-speed', '300')
 		imageContainer360.setAttribute('data-keys', '')
 		imageContainer360.setAttribute('data-ratio', '2')
 		rotation.appendChild(imageContainer360)
