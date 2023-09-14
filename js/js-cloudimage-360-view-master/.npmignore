@@ -2,7 +2,6 @@
 src
 examples
 config
-build
 .babelrc
 .gitignore
 .idea
