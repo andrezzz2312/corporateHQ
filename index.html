@@ -23,6 +23,13 @@
 		<link rel="dns-prefetch" href="https://listyara.sirv.com" />
 
 		<title>CORPORATE HQ</title>
+		<script>
+			window.jQuery ||
+				document.write('<script src="./js/jquery-3.7.1.min.js">\x3C/script>')
+		</script>
+		<script>
+			window.CI360 = { notInitOnLoad: true }
+		</script>
 	</head>
 
 	<body>
@@ -63,6 +70,14 @@
 				<div class="centerContainer">
 					<div class="buttonContainer"></div>
 				</div>
+				<!-- <div
+					class="cloudimage-360"
+					style="width: 50%; height: 50%; z-index: 1000"
+					id="machine"
+					data-folder="/assets/lifelineSw/threesixty/"
+					data-filename-x="lifelineSw{index}.png"
+					data-amount-x="120"
+				></div> -->
 				<div class="centerContainer">
 					<div class="buttonContainer">
 						<div class="threeButtonContainer">
@@ -231,9 +246,10 @@
 			</div>
 			<div class="initial"></div>
 		</div>
+		<script></script>
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
 	<script src="https://scripts.sirv.com/sirv.js"></script>
-
+	<script src="./js/js-cloudimage-360-view-master/build/js-cloudimage-360-view.min.js"></script>
 	<script src="./js/main.js"></script>
 </html>
