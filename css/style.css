@@ -582,9 +582,7 @@ a {
 	display: none;
 }
 .imageContainer360 {
-	width: 80%;
-
-	aspect-ratio: 2/1;
+	width: 80% !important;
 }
 p {
 	white-space: pre-line;
