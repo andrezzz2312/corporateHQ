@@ -1368,9 +1368,9 @@ function setFontSizes() {
 
 function createRotation() {
 	console.log(pageIndex)
-	if (rotation) {
-		rotation.innerHTML = ''
-	}
+	// if (rotation) {
+	// 	rotation.innerHTML = ''
+	// }
 	loader.classList.remove('short-vanish')
 	loader.style.zIndex = '1'
 	initial.style.zIndex = '0'
@@ -1393,21 +1393,6 @@ function createRotation() {
 		initial.classList.add('short-vanish')
 		loader.style.zIndex = '-100'
 
-		const imageContainer360 = document.createElement('div')
-		imageContainer360.classList.add('imageContainer360')
-		imageContainer360.classList.add('cloudimage-360')
-		imageContainer360.setAttribute('id', 'demo')
-		imageContainer360.setAttribute(
-			'data-folder',
-			'./assets/lifelineSw/threesixty/'
-		)
-		imageContainer360.setAttribute('data-filename', 'lifelineSw{index}.png')
-		imageContainer360.setAttribute('data-amount-x', '120')
-		imageContainer360.setAttribute('data-autoplay', '')
-		imageContainer360.setAttribute('data-drag-speed', '300')
-		imageContainer360.setAttribute('data-keys', '')
-		imageContainer360.setAttribute('data-ratio', '2')
-		rotation.appendChild(imageContainer360)
 		// function add360View(viewId) {
 		// 	const new360View = document.getElementById(viewId)
 		// 	console.log()
@@ -1417,7 +1402,7 @@ function createRotation() {
 
 		// add360View('machine')
 		// add360View('demo')
-		window.CI360.init()
+
 		// model.classList.add('Sirv')
 
 		// model.setAttribute('data-src', rotationContent[currentButton])
@@ -1451,7 +1436,7 @@ function exitRotation() {
 	createContent(buttonContent[currentButton], currentButton)
 	animations()
 	// rotation.innerHTML = ''
-	window.CI360.destroy()
+
 	// createBackButton()
 	HideShowCont()
 	window.removeEventListener('resize', resizeRotation)

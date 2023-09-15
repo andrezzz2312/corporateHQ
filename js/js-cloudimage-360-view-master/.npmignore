@@ -1,7 +1,0 @@
-# .npmignore
-src
-examples
-config
-.babelrc
-.gitignore
-.idea

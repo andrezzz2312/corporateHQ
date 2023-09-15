@@ -709,6 +709,8 @@ li:last-child {
 	height: 100%;
 	background-color: #303030;
 }
+.reel {
+}
 
 #rotation_backButton {
 	pointer-events: none;
