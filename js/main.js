@@ -1441,6 +1441,7 @@ function exitRotation() {
 	HideShowCont()
 	window.removeEventListener('resize', resizeRotation)
 }
+
 function backButtonFunction() {
 	console.log('backbuttonfunction')
 	console.log(buttonGridContainer)
