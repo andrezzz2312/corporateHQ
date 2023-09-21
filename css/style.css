@@ -711,6 +711,10 @@ li:last-child {
 	height: 100%;
 	background-color: #303030;
 }
+.rotationContainer {
+	width: 80%;
+	height: 80%;
+}
 .reel {
 }
 
