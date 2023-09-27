@@ -1381,7 +1381,7 @@ function createRotation() {
 		loader.style.zIndex = '-100'
 
 		window.CI360.init()
-
+		//asd
 		// add360View('machine')
 		// add360View('demo')
 
