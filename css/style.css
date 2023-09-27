@@ -153,6 +153,8 @@ body {
 	position: absolute;
 	height: 100%;
 	width: 100%;
+
+	touch-action: manipulation;
 }
 
 .centerContainer {
@@ -708,6 +710,10 @@ li:last-child {
 	width: 100%;
 	height: 100%;
 	background-color: #303030;
+}
+.rotationContainer {
+	width: 80%;
+	height: 80%;
 }
 .reel {
 }
