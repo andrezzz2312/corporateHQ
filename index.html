@@ -27,7 +27,10 @@
 			window.jQuery ||
 				document.write('<script src="./js/jquery-3.7.1.min.js">\x3C/script>')
 		</script>
-		<script src="./js/jquery.reel.js"></script>
+		<script>
+			window.CI360 = { notInitOnLoad: true }
+		</script>
+		<script src="./js/js-cloudimage-360-view-master/build/js-cloudimage-360-view.min.js"></script>
 	</head>
 	<!-- asd -->
 	<body>
@@ -216,16 +219,19 @@
 			</div>
 			<div id="showCont" class="showCont hidden short-vanish"></div>
 			<div id="rotation" class="rotation hidden short-vanish">
-				<img
-					src="/assets/lifelineSw/threesixty/lifelineSw1.png"
-					width="1000"
-					height="600"
-					class="reel"
-					data-images="/assets/lifelineSw/threesixty/lifelineSw#.png|1..120"
-					data-frames="120"
-					data-footage="6"
-					data-revolution="800"
-				/>
+				<div class="rotationContainer">
+					<div
+						class="cloudimage-360"
+						id="machine"
+						data-folder="/assets/lifelineSw/threesixty/"
+						data-filename-x="lifelineSw{index}.jpg"
+						data-amount-x="60"
+						data-ratio="2"
+						data-drag-speed="300"
+						data-spin-reverse="true"
+						data-box-shadow="true"
+					></div>
+				</div>
 			</div>
 			<div class="warning">
 				<div class="modal">
