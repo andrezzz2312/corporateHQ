@@ -221,10 +221,13 @@
 					width="1000"
 					height="600"
 					class="reel"
-					data-images="/assets/lifelineSw/threesixty/lifelineSw#.png|1..120"
-					data-frames="120"
+					data-images="/assets/lifelineSw/threesixty/lifelineSw#.png|1..60"
+					data-frames="60"
 					data-footage="6"
 					data-revolution="800"
+					onTouchStart="disableGestureNavigation(event)"
+					onTouchMove="disableGestureNavigation(event)"
+					onTouchEnd="resetDraggingFlag()"
 				/>
 			</div>
 			<div class="warning">
