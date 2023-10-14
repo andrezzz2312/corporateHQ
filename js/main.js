@@ -1381,41 +1381,25 @@ function createRotation() {
 
 	// HideShowMainButtons()
 	HideShowCont()
-	$('#product-reel').reel(
-		'images',
-		`/assets/${currentButton}/threesixty/${currentButton}_#.jpg`
-	)
-
+	$('#product-reel')
+		.reel(
+			'images',
+			`/assets/${currentButton}/threesixty/${currentButton}_#.jpg`
+		)
+		.bind('loaded', function () {
+			initial.classList.remove('show')
+			initial.classList.add('short-vanish')
+			loader.style.zIndex = '-100'
+			setTimeout(() => {
+				initial.style.zIndex = '-200'
+			}, 400)
+			console.log('SEXOOOO')
+		})
+	rotation.classList.toggle('show')
+	rotation.classList.toggle('hidden')
+	createBackButton('rotationPage')
 	window.addEventListener('resize', resizeRotation)
-	setTimeout(() => {
-		rotation.classList.toggle('show')
-		rotation.classList.toggle('hidden')
-	}, 500)
-	setTimeout(() => {
-		// const centerContainerMade = document.createElement('div')
-		// centerContainerMade.classList.add('centerContainer')
-		// centerContainerMade.setAttribute('id', 'centerContainer_model')
 
-		initial.classList.remove('show')
-		initial.classList.add('short-vanish')
-		loader.style.zIndex = '-100'
-
-		// function add360View(viewId) {
-		// 	const new360View = document.getElementById(viewId)
-		// 	console.log()
-		// 	new360View.classList.add('cloudimage-360')
-		// 	window.CI360.add(viewId)
-		// }
-
-		// add360View('machine')
-		// add360View('demo')
-
-		// model.classList.add('Sirv')
-
-		// model.setAttribute('data-src', rotationContent[currentButton])
-
-		createBackButton('rotationPage')
-	}, 1000)
 	setTimeout(() => {
 		showCont.innerHTML = ''
 	}, 300)
