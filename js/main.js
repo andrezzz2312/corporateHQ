@@ -1381,14 +1381,16 @@ function createRotation() {
 
 	// HideShowMainButtons()
 	HideShowCont()
-	rotation.classList.toggle('show')
-	rotation.classList.toggle('hidden')
 	$('#product-reel').reel(
 		'images',
 		`/assets/${currentButton}/threesixty/${currentButton}_#.jpg`
 	)
-	window.addEventListener('resize', resizeRotation)
 
+	window.addEventListener('resize', resizeRotation)
+	setTimeout(() => {
+		rotation.classList.toggle('show')
+		rotation.classList.toggle('hidden')
+	}, 500)
 	setTimeout(() => {
 		// const centerContainerMade = document.createElement('div')
 		// centerContainerMade.classList.add('centerContainer')
@@ -1413,7 +1415,7 @@ function createRotation() {
 		// model.setAttribute('data-src', rotationContent[currentButton])
 
 		createBackButton('rotationPage')
-	}, 0)
+	}, 1000)
 	setTimeout(() => {
 		showCont.innerHTML = ''
 	}, 300)
