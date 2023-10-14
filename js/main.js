@@ -1395,9 +1395,11 @@ function createRotation() {
 				initial.style.zIndex = '-200'
 			}, 400)
 		})
-	setTimeout(() => {}, 500)
-	rotation.classList.toggle('show')
-	rotation.classList.toggle('hidden')
+	setTimeout(() => {
+		rotation.classList.toggle('show')
+		rotation.classList.toggle('hidden')
+	}, 500)
+
 	createBackButton('rotationPage')
 	window.addEventListener('resize', resizeRotation)
 
