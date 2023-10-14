@@ -1390,11 +1390,10 @@ function createRotation() {
 			initial.classList.remove('show')
 			initial.classList.add('short-vanish')
 			loader.style.zIndex = '-100'
-			setTimeout(() => {
-				initial.style.zIndex = '-200'
-			}, 400)
-			console.log('SEXOOOO')
+			initial.style.zIndex = '-200'
+			setTimeout(() => {}, 400)
 		})
+	setTimeout(() => {}, 500)
 	rotation.classList.toggle('show')
 	rotation.classList.toggle('hidden')
 	createBackButton('rotationPage')
