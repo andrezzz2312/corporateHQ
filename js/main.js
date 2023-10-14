@@ -1368,6 +1368,7 @@ function setFontSizes() {
 }
 
 function createRotation() {
+	console.log(currentButton)
 	console.log(pageIndex)
 	// if (rotation) {
 	// 	rotation.innerHTML = ''
@@ -1382,7 +1383,10 @@ function createRotation() {
 	HideShowCont()
 	rotation.classList.toggle('show')
 	rotation.classList.toggle('hidden')
-
+	$('#product-reel').reel(
+		'images',
+		`/assets/${currentButton}/threesixty/${currentButton}_#.jpg`
+	)
 	window.addEventListener('resize', resizeRotation)
 
 	setTimeout(() => {
