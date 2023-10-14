@@ -1374,12 +1374,11 @@ function createRotation() {
 	// 	rotation.innerHTML = ''
 	// }
 	loader.classList.remove('short-vanish')
-	loader.style.zIndex = '1'
-	initial.style.zIndex = '0'
+	loader.style.zIndex = '2'
+	initial.style.zIndex = '1'
 	initial.classList.remove('short-vanish')
-	initial.classList.add('show')
+	// initial.classList.add('show')
 
-	// HideShowMainButtons()
 	HideShowCont()
 	$('#product-reel')
 		.reel(
@@ -1390,16 +1389,13 @@ function createRotation() {
 			initial.classList.remove('show')
 			initial.classList.add('short-vanish')
 			loader.style.zIndex = '-100'
-
 			setTimeout(() => {
 				initial.style.zIndex = '-200'
 			}, 400)
 		})
-	setTimeout(() => {
-		rotation.classList.toggle('show')
-		rotation.classList.toggle('hidden')
-	}, 500)
 
+	rotation.classList.toggle('show')
+	rotation.classList.toggle('hidden')
 	createBackButton('rotationPage')
 	window.addEventListener('resize', resizeRotation)
 
@@ -1420,18 +1416,13 @@ function resizeRotation() {
 function exitRotation() {
 	ArreglarLineas()
 	backButtonRotation.style.pointerEvents = 'none'
-	// const centerContainerBackButton = document.querySelector(
-	// 	'#centerContainer_backButton'
-	// )
-	// centerContainerBackButton.remove()
+
 	console.log('remove show')
 	rotation.classList.remove('show')
 	rotation.classList.add('short-vanish')
 	createContent(buttonContent[currentButton], currentButton)
 	animations()
-	// rotation.innerHTML = ''
 
-	// createBackButton()
 	HideShowCont()
 	window.removeEventListener('resize', resizeRotation)
 }
