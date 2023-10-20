@@ -1799,8 +1799,8 @@ fullscreen_button.addEventListener('click', function (e) {
 mainMenuB.forEach((e, i) => {
 	dataId[i] = e.dataset.id
 	dataVariant[i] = e.dataset.variant
-	console.log(dataId[i])
-	console.log(dataVariant)
+	// console.log(dataId[i])
+	// console.log(dataVariant)
 	e.addEventListener('click', function (e) {
 		// if (dataId[i] === 'view3') {
 		// 	console.log('perraje')
